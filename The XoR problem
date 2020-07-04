@@ -1,0 +1,38 @@
+#code done by Ashutosh Chandra
+
+
+
+
+
+def maxXorValue(x, k):
+    new=''
+    l1=list(x)
+
+            
+    for _ in range(len(l1)):
+        a=int(l1[_])
+        if k>a and a == 0:
+            new = new + str(1)
+            k = k-1
+        elif k>a and a == 1 :
+            
+            new = new + str(0)
+        else:
+            new = new + str(0)
+    print(new)
+
+
+
+
+
+if __name__ == '__main__':
+    
+    t = int(input())
+
+    for t_itr in range(t):
+        s = input()
+
+        k = int(input())
+
+        y = maxXorValue(s, k)
+
