@@ -21,7 +21,7 @@ def maxXorValue(x, k):
             
             new = new + str(0)
         else:
-            new = new + str(0)	#if both conditon doesn't satisfy add 1 to the string
+            new = new + str(0)	#if both conditon doesn't satisfy add 0 to the string
     print(new)
 
 
