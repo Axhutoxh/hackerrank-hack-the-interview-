@@ -12,14 +12,16 @@ def maxXorValue(x, k):
             
     for _ in range(len(l1)):	#loop runs from 0 to n 
         a=int(l1[_])		#in each iteration list object convert to int and assign to a variable
-        if k>a and a == 0:
+
+
+	 if k>a and a == 0:	#if condition satisfy add 1 in string new and decrement the value of k by -1
             new = new + str(1)
             k = k-1
-        elif k>a and a == 1 :
+        elif k>a and a == 1 :	#if condition satisfy add 0 in string new 
             
             new = new + str(0)
         else:
-            new = new + str(0)
+            new = new + str(0)	#if both conditon doesn't satisfy add 1 to the string
     print(new)
 
 
